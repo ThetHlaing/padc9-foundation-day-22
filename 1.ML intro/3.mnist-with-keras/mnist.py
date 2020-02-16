@@ -61,4 +61,4 @@ for i in range(3):
     print(pred)
     print(pred.argmax())
 
-# model.save('./save/minst_model.h5')
+model.save('./save/minst_model.h5')
