@@ -4,13 +4,13 @@ import random
 
 (x_train, y_train), (x_test, y_test) = mnist.load_data()
 
-# print(x_train.shape)
-# image_index = random.randrange(x_train.shape[0]) # You may select anything up to 60,000
+print(x_train.shape)
+image_index = random.randrange(x_train.shape[0]) # You may select anything up to 60,000
 
-# print(y_train[image_index]) # The label
-# plt.imshow(x_train[image_index], cmap='Greys')
-# #plt.show()
-
+print(y_train[image_index]) # The label
+plt.imshow(x_train[image_index], cmap='Greys')
+plt.show()
+print(x_train[image_index])
 
 
 # Reshaping the array to 4-dims so that it can work with the Keras API
@@ -61,4 +61,4 @@ for i in range(3):
     print(pred)
     print(pred.argmax())
 
-model.save('./save/minst_model.h5')
+# model.save('./save/minst_model.h5')
